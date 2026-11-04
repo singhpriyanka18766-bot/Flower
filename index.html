@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Magic Rose</title>
+<style>
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  color: red;
+  text-shadow: 0 0 20px red, 0 0 40px pink;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px red; }
+  to { text-shadow: 0 0 40px hotpink; }
+}
+
+.rose {
+  font-size: 130px;
+  animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+</style>
+</head>
+<body>
+<div style="text-align:center">
+  <div class="rose">🌹</div>
+  <h1>MAGIC ROSE</h1>
+  <p style="color:white">A Flower Full Of Magic ✨</p>
+</div>
+</body>
+</html>
